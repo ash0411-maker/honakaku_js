@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // aタグのurlにテキストボックスの要素を入れる
     anchor.href = url.value;
 
-    // テキストノードを生成
+    // 入力された値からテキストノードを生成
     let text = document.createTextNode(name.value);
-    // aタグの下にテキストノードを追加
+    // aタグの直下にテキストノードを追加
     anchor.appendChild(text);
 
     let br = document.createElement("br");
