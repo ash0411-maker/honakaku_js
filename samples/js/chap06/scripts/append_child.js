@@ -1,16 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('btn').addEventListener('click', function() {
-    var name = document.getElementById('name');
-    var url = document.getElementById('url');
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("btn").addEventListener("click", function() {
+    // テキストボックスの取得
+    let name = document.getElementById("name");
+    let url = document.getElementById("url");
 
-    var anchor = document.createElement('a');
-    anchor.href= url.value;
-    var text = document.createTextNode(name.value);
+    // aタグの作成
+    let anchor = document.createElement("a");
+    // aタグのurlにテキストボックスの要素を入れる
+    anchor.href = url.value;
+
+    // テキストノードを生成
+    let text = document.createTextNode(name.value);
+    // aタグの下にテキストノードを追加
     anchor.appendChild(text);
-    var br = document.createElement('br');
-    var list = document.getElementById('list');
+
+    let br = document.createElement("br");
+    let list = document.getElementById("list");
     list.appendChild(anchor);
-    // list.insertBefore(anchor, null);
     list.appendChild(br);
-  }, false);
-}, false);
+  }, false)
+}, false)
