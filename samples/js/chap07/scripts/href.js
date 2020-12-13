@@ -5,3 +5,5 @@ document.addEventListener("DOMContentLoaded", function() {
     location.href = 'http://www.wings.msn.to/index.php/-/A-03/' + this.value;
   }, false)
 }, false)
+
+console.error("aaaaa")

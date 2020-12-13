@@ -26,8 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
       result.textContent = 'サーバーエラーが発生しました。';
     }, false);
     */
-    xhr.open('GET', 'hello_ajax.php?name=' +
-      encodeURIComponent(document.getElementById('name').value), true);
-    xhr.send(null);
+    // xhr.open('GET', 'hello_ajax.php?name=' +
+    //   encodeURIComponent(document.getElementById('name').value), true);
+    // xhr.send(null);
+
+    xhr.open("POST", "hello_ajax_php", true);
+    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
+    xhr.send("name=" + encodeURIComponent(document.getElementById("name".value)));
   }, false);
 }, false);
