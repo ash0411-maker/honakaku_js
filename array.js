@@ -59,14 +59,14 @@
 // console.log(myClosure());
 
 
-let Member = function(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-};
+// let Member = function(firstName, lastName) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// };
 
-Member.prototype.getName = function() {
-  return this.lastName + " " + this.firstName;
-};
+// Member.prototype.getName = function() {
+//   return this.lastName + " " + this.firstName;
+// };
 
-let mem = new Member("たかし", "涼宮");
-console.log(mem.getName());
+// let mem = new Member("たかし", "涼宮");
+// console.log(mem.getName());
